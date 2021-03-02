@@ -41,7 +41,7 @@ local k = import 'ksonnet/ksonnet.beta.4/k.libsonnet';
             name: 'DISABLE_IPV6',
             value: 'True',
           },
-          { name: 'RELAY_DOMAINS', value: ':192.168.0.0/24:10.0.0.0/16' },
+          { name: 'RELAY_DOMAINS', value: ':192.168.0.0/24:10.0.0.0/10' },
         ]);
 
       local c = [smtpRelay];

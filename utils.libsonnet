@@ -122,7 +122,7 @@ local k = import 'ksonnet/ksonnet.beta.4/k.libsonnet';
     I + ingress.mixin.spec.withTls(
       ingressTls.new() +
       ingressTls.withHosts(host) +
-      (if S != '' then { secretName: S } else {})
+      (if S != '' then { secretName: S })
     )
   ),
 

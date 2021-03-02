@@ -141,7 +141,7 @@ local vars = import 'vars.jsonnet';
         if vars.UseProvidedCerts then
           utils.addIngressTLS(I, 'ingress-secret')
         else
-          utils.addIngressTLS(I)
+          utils.addIngressTLS(I, vars.TLSExistingSectret)
       else
         I,
 
@@ -151,7 +151,7 @@ local vars = import 'vars.jsonnet';
         if vars.UseProvidedCerts then
           utils.addIngressTLS(I, 'ingress-secret')
         else
-          utils.addIngressTLS(I)
+          utils.addIngressTLS(I, vars.TLSExistingSectret)
       else
         I,
 
@@ -161,7 +161,7 @@ local vars = import 'vars.jsonnet';
         if vars.UseProvidedCerts then
           utils.addIngressTLS(I, 'ingress-secret')
         else
-          utils.addIngressTLS(I)
+          utils.addIngressTLS(I, vars.TLSExistingSectret)
       else
         I,
 

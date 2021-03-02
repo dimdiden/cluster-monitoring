@@ -47,6 +47,7 @@ local k = import 'ksonnet/ksonnet.beta.4/k.libsonnet';
         container.new('arm-exporter', $._config.imageRepos.armExporter + ':' + $._config.versions.armExporter) +
         container.withCommand([
           '/bin/rpi_exporter',
+          '--no-collector.gpu',
           '--web.listen-address=127.0.0.1:9243',
         ]) +
         container.mixin.securityContext.withPrivileged(true) +
