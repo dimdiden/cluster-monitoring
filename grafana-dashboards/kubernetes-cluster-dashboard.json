@@ -857,7 +857,7 @@
           "query": {
             "params": [
               "C",
-              "5m",
+              "1m",
               "now"
             ]
           },
@@ -868,6 +868,7 @@
           "type": "query"
         }],
         "executionErrorState": "alerting",
+        "for": "2m",
         "frequency": "60s",
         "handler": 1,
         "name": "Node Down",
